@@ -1,4 +1,4 @@
-import com.chatbot.ClientMain;
+import com.chatbot.Main;
 
 public class ClientTest {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class ClientTest {
             final int clientId = i;
             Thread clientThread = new Thread(() -> {
                 System.out.println("Cliente " + clientId + " tentando se conectar...");
-                ClientMain.main(new String[0]); // Executa o código do cliente
+                Main.main(new String[0]); // Executa o código do cliente
             });
             clientThread.start();
         }
