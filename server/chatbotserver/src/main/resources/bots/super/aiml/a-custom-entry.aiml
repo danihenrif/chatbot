@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-<!-- File: picture.aiml -->
+<!-- File: a-custom-entry.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
 <!-- Last modified: março 15, 2024 -->
 <!--  -->
@@ -15,19 +15,13 @@
 <!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
-<category><pattern>SHOW ME *</pattern>
-<template><srai>PICTUREBLAB <star/></srai><sraix hint="pic">SHOW ME <star/></sraix></template>
+<category><pattern>WHAT IS JAVA</pattern>
+<template>Java is a programming language.</template>
 </category>
-<category><pattern>PICTUREBLAB *</pattern>
-<template><random>
-<li>Here you are.</li>
-<li>I hope you like this picture.</li>
-<li>I have this picture.</li>
-<li>There you go.</li>
-<li>Look at that <star/>.</li>
-<li>This is what <star/> looks like.</li>
-<li>I found this pic of <star/>.</li>
-<li>I've displayed a picture for you.</li>
-</random></template>
+<category><pattern>WHAT IS CHAT BOT</pattern>
+<template>Chatbot is a computer program designed to simulate conversation with human users, especially over the Internet.</template>
+</category>
+<category><pattern>WHAT IS INDIA</pattern>
+<template>wonderful country.</template>
 </category>
 </aiml>
