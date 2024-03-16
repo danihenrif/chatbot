@@ -17,3 +17,11 @@ V
 &client/chatbotclient/chatbotclient.iml,3\d\3d969a48ec3f0803b9975c487bbd8b73225c4725
 s
 Cserver/chatbotserver/src/main/java/com/chatbot/chatbot/Chatbot.java,8\e\8eebdcf2b8fd09d4913772d5de39e8983ec7aff1
+x
+Hserver/chatbotserver/src/main/java/com/chatbot/rmi/MessengerService.java,0\c\0caab5e0b0b4955ab7687e8e83a3540823e86e9f
+x
+Hserver/chatbotserver/src/main/java/com/chatbot/rmi/ServerRmiChatbot.java,6\e\6ec0c5a5d9ec1effc42709d1fc95bdb8626b2c2c
+|
+Lserver/chatbotserver/src/main/java/com/chatbot/rmi/MessengerServiceImpl.java,b\6\b64d096cd43ec85b0238cf4cd2c5310506ee016c
+q
+Aclient/chatbotclient/src/main/java/com/chatbot/rmi/ClientRmi.java,3\0\309044f674cb20fa43fd6f4b22d992d963297f01

@@ -1,6 +1,8 @@
 
+g	java:S1123"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8±´ÚÁä1
 y
-java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "resp".(˜µœ•8áÛÆ£ä1
+java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "resp".(˜µœ•8áÛÆ£ä1
 7
-java:S1700
-"Rename field "clientSocket"(ó’ª~8ıİÂ£ä1
+java:S1700"Rename field "clientSocket"(ó’ª~8ıİÂ£ä1
+L	java:S106*"+Replace this use of System.out by a logger.(Á”—Æıÿÿÿÿ8Î´ÚÁä1
+L	java:S106."+Replace this use of System.out by a logger.(Ú±€¥ıÿÿÿÿ8Ï´ÚÁä1

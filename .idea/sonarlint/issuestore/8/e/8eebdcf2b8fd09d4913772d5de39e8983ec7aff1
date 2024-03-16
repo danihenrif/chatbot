@@ -1,13 +1,13 @@
 
-‡
-java:S14887"eImmediately return this expression instead of assigning it to the temporary variable "resourcesPath".(ÍËˆ¾ıÿÿÿÿ8÷ï½¨ä1
+‚
+java:S14887"eImmediately return this expression instead of assigning it to the temporary variable "resourcesPath".(Ÿ›¹8ö¹ÖÀä1
 t
-java:S1450"RRemove the "bot" field and declare it as a local variable in the relevant methods.(»Ùáıÿÿÿÿ8ÏÊ¨ä1
+java:S1450"RRemove the "bot" field and declare it as a local variable in the relevant methods.(»Ùáıÿÿÿÿ8¢ºÖÀä1
 y
-java:S1450"\Remove the "resourcesPath" field and declare it as a local variable in the relevant methods.(ÛÔÈÇ8ğ½¨ä1
+java:S1450"\Remove the "resourcesPath" field and declare it as a local variable in the relevant methods.(ÛÔÈÇ8¢ºÖÀä1
 S
-java:S2696"6Make the enclosing method "static" or remove this set.(é­Ìª8…ğ½¨ä1
-L	java:S106""+Replace this use of System.out by a logger.(Ú÷„­øÿÿÿÿ8Œğ½¨ä1
+java:S2696"6Make the enclosing method "static" or remove this set.(é­Ìª8§ºÖÀä1
+L	java:S106""+Replace this use of System.out by a logger.(Ú÷„­øÿÿÿÿ8­ºÖÀä1
 L
-java:S1905""*Remove this unnecessary cast to "History".(Ú÷„­øÿÿÿÿ8ÙÒÅ¨ä1
-G	java:S1066"+Replace this use of System.out by a logger.(ÍÎÉ 8–ğ½¨ä1
+java:S1905""*Remove this unnecessary cast to "History".(Ú÷„­øÿÿÿÿ8®ºÖÀä1
+G	java:S1066"+Replace this use of System.out by a logger.(ÍÎÉ 8¶ºÖÀä1

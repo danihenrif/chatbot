@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class ClientSocket {
     private Socket clientSocket;
@@ -29,4 +30,25 @@ public class ClientSocket {
         clientSocket.close();
     }
 
+    public static void main(String[] args) {
+        ClientSocket client = new ClientSocket();
+        try {
+            client.startConnection("localhost", 1235);
+
+            Scanner scanner = new Scanner(System.in);
+            String pergunta = "";
+
+            while (!pergunta.equals("good bye")) {
+                System.out.println("Você: ");
+                pergunta = scanner.nextLine();
+
+                String response = client.sendMessage(pergunta);
+                System.out.println("Chatbot: " + response);
+
+            }
+            client.stopConnection();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
