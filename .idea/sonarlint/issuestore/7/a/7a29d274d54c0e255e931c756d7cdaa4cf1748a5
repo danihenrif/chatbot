@@ -1,3 +1,5 @@
 
-g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8êÓÛ£ä1
-g	java:S112)"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Äñõ£ä1
+g	java:S112'"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ç¹Ş¨ä1
+g	java:S1122"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8È¹Ş¨ä1
+s
+java:S1450"VRemove the "chatbot" field and declare it as a local variable in the relevant methods.(íãÚÂ8êßâ¨ä1

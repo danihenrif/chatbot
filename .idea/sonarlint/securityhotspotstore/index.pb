@@ -13,3 +13,7 @@ w
 Gclient/chatbotclient/src/main/java/com/chatbot/socket/ClientSocket.java,a\9\a9677341707dc3e63d7ca453989f4bde4aed1f30
 h
 8client/chatbotclient/src/main/java/com/chatbot/Main.java,7\f\7fc8890fd6110a2a764836c343ffd43a50e8e12e
+V
+&client/chatbotclient/chatbotclient.iml,3\d\3d969a48ec3f0803b9975c487bbd8b73225c4725
+s
+Cserver/chatbotserver/src/main/java/com/chatbot/chatbot/Chatbot.java,8\e\8eebdcf2b8fd09d4913772d5de39e8983ec7aff1
