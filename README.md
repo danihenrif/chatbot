@@ -45,4 +45,3 @@ Antes de executar o projeto, certifique-se de ter as seguintes ferramentas insta
       ```bash
       Você: BEST SOCCER TEAM
       Chatbot: AH essa é fácil, Vasco da Gama
-      ```
