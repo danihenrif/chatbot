@@ -24,6 +24,7 @@ public class Chatbot {
         bot = new Bot(botName, resourcesPath);
         chatSession = new Chat(bot);
         bot.brain.nodeStats();
+
     }
 
     public String processMessage(String request) {
@@ -52,8 +53,22 @@ public class Chatbot {
         String path = currDir.getAbsolutePath();
         path = path.substring(0, path.length() - 2);
         System.out.println(path);
-    String resourcesPath = path + File.separator + "server" + File.separator + "chatbotserver" +File.separator+ "src" + File.separator + "main" + File.separator + "resources";
+        String resourcesPath = path + File.separator + "server" + File.separator + "chatbotserver" + File.separator + "src" + File.separator + "main" + File.separator + "resources";
         return resourcesPath;
     }
 
+    public static void addAiml() {
+        try {
+
+            String resourcesPath = getResourcesPath();
+            System.out.println(resourcesPath);
+            MagicBooleans.trace_mode = TRACE_MODE;
+            Bot bot = new Bot("super", resourcesPath);
+
+            bot.writeAIMLFiles();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
