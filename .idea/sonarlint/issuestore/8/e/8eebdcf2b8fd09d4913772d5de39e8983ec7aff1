@@ -1,0 +1,14 @@
+
+‚
+java:S14888"eImmediately return this expression instead of assigning it to the temporary variable "resourcesPath".(Ÿ›¹8¢ÑÛÚå1
+t
+java:S1450"RRemove the "bot" field and declare it as a local variable in the relevant methods.(»Ùáıÿÿÿÿ8ÍÑÛÚå1
+y
+java:S1450"\Remove the "resourcesPath" field and declare it as a local variable in the relevant methods.(ÛÔÈÇ8ÎÑÛÚå1
+S
+java:S2696"6Make the enclosing method "static" or remove this set.(é­Ìª8ÑÑÛÚå1
+L	java:S106#"+Replace this use of System.out by a logger.(Ú÷„­øÿÿÿÿ8¥ÓÛå1
+L
+java:S1905#"*Remove this unnecessary cast to "History".(Ú÷„­øÿÿÿÿ8Şç’Ûå1
+G	java:S1067"+Replace this use of System.out by a logger.(ÍÎÉ 8çç’Ûå1
+G	java:S106@"+Replace this use of System.out by a logger.(¯Ìú‡8ôŒ—Ûå1
