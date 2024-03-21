@@ -27,6 +27,7 @@ public class Chatbot {
 
     }
 
+    @SuppressWarnings("rawtypes")
     public String processMessage(String request) {
         try {
             String response = "";

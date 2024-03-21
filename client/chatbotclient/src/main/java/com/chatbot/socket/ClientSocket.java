@@ -24,7 +24,8 @@ public class ClientSocket {
         return resp;
     }
 
-    public void stopConnection() throws IOException {
+    public void stopConnection(Scanner scanner) throws IOException {
+        scanner.close();
         in.close();
         out.close();
         clientSocket.close();
@@ -46,7 +47,7 @@ public class ClientSocket {
                 System.out.println("Chatbot: " + response);
 
             }
-            client.stopConnection();
+            client.stopConnection(scanner);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

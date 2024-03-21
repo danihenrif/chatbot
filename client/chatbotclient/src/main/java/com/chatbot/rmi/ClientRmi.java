@@ -21,6 +21,7 @@ public class ClientRmi {
                 String response = server.sendMessage(pergunta);
                 System.out.println(response);
             }
+            scanner.close();
         } catch (Exception e) {
         }
     }

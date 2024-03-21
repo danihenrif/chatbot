@@ -3,9 +3,6 @@ package com.chatbot;
 import com.chatbot.rmi.ClientRmi;
 import com.chatbot.socket.ClientSocket;
 
-import java.io.IOException;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         
