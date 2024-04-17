@@ -1,18 +1,35 @@
 package com.chatbot;
 
-import com.chatbot.rmi.ClientRmi;
-import com.chatbot.socket.ClientSocket;
+
+import com.chatbot.stub.Stub;
+
+import java.io.IOException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        
-        if (args[1].equals("socket")) {
-            ClientSocket.main(args);
-        }
 
-        if (args[1].equals("rmi")){
-            ClientRmi.main(args);
+        Stub stub = null;
+        try {
+            stub = new Stub();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
+        try {
+            Scanner scanner = new Scanner(System.in);
+            String pergunta = "";
 
+            while (!pergunta.equals("good bye")) {
+                System.out.println("Você: ");
+                pergunta = scanner.nextLine();
+
+                String response = stub.sendMessage(pergunta);
+                System.out.println("Chatbot: " + response);
+
+            }
+            scanner.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

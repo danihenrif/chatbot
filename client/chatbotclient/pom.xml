@@ -19,6 +19,11 @@
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20231013</version> <!-- Adjust version as needed -->
+        </dependency>
     </dependencies>
 
 </project>

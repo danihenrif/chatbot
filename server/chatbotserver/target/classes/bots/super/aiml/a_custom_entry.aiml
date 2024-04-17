@@ -21,20 +21,20 @@
 <category><pattern>WHAT IS CHAT BOT</pattern>
 <template>Chatbot is a computer program designed to simulate conversation with human users, especially over the Internet.</template>
 </category>
-<category><pattern>Lema do Vasco</pattern>
+<category><pattern>LEMA DO VASCO</pattern>
 <template>O lema “RESPEITO-IGUALDADE-INCLUSÃO” espelha um compromisso que
-não é apenas do Clube, mas de todos os vascaínos e vascaínas. </template>
+não é apenas do Clube, mas de todos os vascaínos e vascaínas.</template>
 </category>
 <category><pattern>WHAT IS VASCO</pattern>
 <template>O Club de Regatas Vasco da Gama, mais conhecido como Vasco da Gama ou simplesmente Vasco,
 cujo acrônimo é CRVG, é uma entidade sócio-poliesportiva brasileira com sede na cidade do Rio de Janeiro,
 fundada em 21 de agosto de 1898 por um grupo de remadores.</template>
 </category>
-<category><pattern>Why the name Vasco</pattern>
+<category><pattern>WHY THE NAME VASCO</pattern>
 <template>o clube ganhou o seu nome em homenagem ao navegador português Vasco da Gama. As cores escolhidas para
 simbolizar o clube foram o preto, o branco e o vermelho, estilizados na cruz de malta, símbolo do time.</template>
 </category>
-<category><pattern>Sing Vasco song</pattern>
+<category><pattern>SING VASCO SONG</pattern>
 <template>Vamos todos cantar de coração
           A Cruz de Malta é o meu pendão
           Tu tens o nome do heroico português
@@ -75,16 +75,16 @@ simbolizar o clube foram o preto, o branco e o vermelho, estilizados na cruz de 
           No futebol, és um traço
           De união Brasil-Portugal</template>
 </category>
-<category><pattern>Best Soccer Team</pattern>
+<category><pattern>BEST SOCCER TEAM</pattern>
 <template>AH essa é fácil, Vasco da Gama</template>
 </category>
-<category><pattern>winner LIBERTADORES 1998</pattern>
+<category><pattern>WINNER LIBERTADORES 1998</pattern>
 <template>Nada mais, nada menos que o Gigante da Colina, o Almirante, o Cruzmaltino, o Vasco da Gama!</template>
 </category>
-<category><pattern>Apelido do Edmundo</pattern>
+<category><pattern>APELIDO DO EDMUNDO</pattern>
 <template>Animal</template>
 </category>
-<category><pattern>Estrelas NA CAMISA DO VASCO</pattern>
+<category><pattern>ESTRELAS NA CAMISA DO VASCO</pattern>
 <template>8</template>
 </category>
 <category><pattern>COMO É CONHECIDO O CLASSICO VASCO X FLAMENGO</pattern>

@@ -1,0 +1,22 @@
+{
+  "sockets": [
+    {
+      "nome": "chatbot",
+      "url": "",
+      "ip": "localhost",
+      "port": 1235
+    },
+    {
+      "nome": "socket2",
+      "url": "example.org",
+      "ip": "192.168.1.2",
+      "port": 8181
+    },
+    {
+      "nome": "socket3",
+      "url": "example.net",
+      "ip": "192.168.1.3",
+      "port": 8282
+    }
+  ]
+}
