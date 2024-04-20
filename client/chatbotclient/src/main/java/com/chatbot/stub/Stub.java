@@ -17,19 +17,31 @@ public class Stub {
     private HashMap<String, Socket> stubMapSocket = new HashMap<>();
     private HashMap<String, PrintWriter> printWriters = new HashMap<>();
     private HashMap<String, BufferedReader> bufferedReaders = new HashMap<>();
-    private HashMap<String, JSONObject> socketsJsonInfo = new HashMap<>();
 
     public Stub() throws IOException {
-        loadAddressList();
     }
 
     private Socket getSocket(String nome) throws IOException {
         return stubMapSocket.computeIfAbsent(nome, key -> {
             try {
-                JSONObject socketObject = socketsJsonInfo.get(nome);
-                String url = socketObject.getString("url");
-                String ip = socketObject.getString("ip");
-                int port = socketObject.getInt("port");
+
+                Socket clientNamingServiceSocket = new Socket("localhost", 1236);
+
+                PrintWriter out = new PrintWriter(clientNamingServiceSocket.getOutputStream(), true);
+                BufferedReader in = new BufferedReader(new InputStreamReader(clientNamingServiceSocket.getInputStream()));
+                String message = String.format("get %s", nome);
+                out.println(message);
+                String resp = in.readLine();
+
+                System.out.println(resp);
+                String[] keyValuePairs = resp.split(";");
+
+                String[] keyAndValueIP = keyValuePairs[0].split("=");
+                String ip = keyAndValueIP[1];
+
+                String[] keyAndValuePORT = keyValuePairs[1].split("=");
+                int port = Integer.parseInt(keyAndValuePORT[1].trim());
+
                 return new Socket(ip, port);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -78,22 +90,6 @@ public class Stub {
         stubMapSocket.remove(nome);
     }
 
-    public void loadAddressList() throws IOException {
-        try {
-            String jsonContent = new String(Files.readAllBytes(Paths.get("client/chatbotclient/src/main/java/com/chatbot/stub/sockets.json")));
-            JSONObject jsonObject = new JSONObject(jsonContent);
-            JSONArray socketsArray = jsonObject.getJSONArray("sockets");
-            for (int i = 0; i < socketsArray.length(); i++) {
-                JSONObject socketObject = socketsArray.getJSONObject(i);
-
-                // Extract socket details
-                String nome = socketObject.getString("nome");
-                socketsJsonInfo.put(nome, socketObject);
-            }
-        } catch (JSONException e) {
-            throw new RuntimeException(e);
-        }
-    }
 
     public String sendMessage(String msg) throws IOException {
         Socket socket = getSocket("chatbot");
@@ -101,7 +97,9 @@ public class Stub {
         BufferedReader in = getBufferedReader("chatbot");
 
         out.println(msg);
+
         String resp = in.readLine();
+
         if (msg.equals("good bye")) {
             stopConnection("chatbot");
         }
