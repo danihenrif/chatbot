@@ -20,9 +20,7 @@ Antes de executar o projeto, certifique-se de ter as seguintes ferramentas insta
    ```
 2. Execute primeiro o lado do servidor
 
-    1. Com socket: <br>
-        1.1. Execute a classe:<br> 
-
+    1. Execute a classe <br>
         ```bash
         ServerSocketChatBot
         ```
@@ -50,8 +48,25 @@ Antes de executar o projeto, certifique-se de ter as seguintes ferramentas insta
         
         localizada dentro do lado cliente na pasta rmi. <br>
 
+    3. Com socket baseado em middleware: <br>
+    1.1. Execute a classe:<br> 
 
-    3. Faça perguntas ao chatbot :) <br> Ex de interação: <br>
+        ```bash
+        ServerSocketChatbot
+        ```
+        
+        localizada dentro do servidor na pasta socket. <br><br>
+        1.2. Execute a classe: <br>
+
+        ```bash
+        NameServiceSocket
+        &
+        Main
+        ```
+        
+        localizada dentro do lado cliente nas pastas name_service e chatbot. <br>
+
+    4. Faça perguntas ao chatbot :) <br> Ex de interação: <br>
         ```bash
         Você: BEST SOCCER TEAM
         Chatbot: AH essa é fácil, Vasco da Gama
